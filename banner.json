@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-20-ir-lcd-status",
+  "eyebrow": "PICOKIT // LESSON 20",
+  "title": "PICOKIT // IR LCD STATUS",
+  "subtitle": "STATUS PAGES + AUTHENTICATED HEARTBEAT",
+  "accent": "#4000FF",
+  "dim": "#27009E",
+  "white": "#D9D2FF",
+  "cyan": "#7FD8E0",
+  "bg": "#040011",
+  "bg_edge": "#010005",
+  "icon": "lcd",
+  "panel_status": "PAGE 2/3  ·  SENSOR  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "REMOTE",
+      "value": "NEC"
+    },
+    {
+      "label": "PAGE",
+      "value": "2 / 3"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-34 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00020  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] key 0x45  page 2 sensor  lcd render",
+    "[+] ack sent  rssi -34  snr 9.0"
+  ],
+  "categories": [
+    "REMOTE",
+    "PAGES",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "PG-01",
+      "label": "status",
+      "value": "1 / 3"
+    },
+    {
+      "tag": "PG-02",
+      "label": "sensor",
+      "value": "2 / 3"
+    },
+    {
+      "tag": "PG-03",
+      "label": "radio",
+      "value": "3 / 3"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ STATUS ]=="
+  ],
+  "layout": "grid",
+  "stat": "NEC"
+}
